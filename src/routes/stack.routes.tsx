@@ -5,6 +5,8 @@ import colors from '../styles/colors';
 
 //aqui importa as telas
 import { Splash } from '../pages/splash';
+import { Login } from '../pages/login';
+import { MenuInicial } from '../pages/menuInicial';
 
 const stackRoutes = createStackNavigator();
 
@@ -21,6 +23,16 @@ const AppRoutes: React.FC = () => (
             name={'Splash'}
             component={Splash}
         />
+
+        <stackRoutes.Screen
+            name={'Login'}
+            component={Login}
+            />
+        
+        <stackRoutes.Screen
+            name={'MenuInicial'}
+            component={MenuInicial}
+            />
 
 
     </stackRoutes.Navigator>

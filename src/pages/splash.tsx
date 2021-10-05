@@ -10,20 +10,31 @@ import {  SafeAreaView,
 
 const animado = require('../assets/animado.gif');
 
+import { useNavigation } from '@react-navigation/core'  //yarn add @react-navigation/core
 
 export function Splash() {
+  const navigation = useNavigation();  
+  
+  function trocaTela(){
+    navigation.navigate('Login');
+  }
+  
+  function SplashScreen(){
+    setTimeout(() => { trocaTela() }, 2500);//https://www.youtube.com/watch?v=MY6rE5plNIc
+  } 
+
   return (
+    SplashScreen(),
     <View style={styles.container}>
         <Image source={animado} />
+        
     </View>
   );
 }
 
-function SplashScreen(){
-  setTimeout(() => {
-    //https://www.youtube.com/watch?v=MY6rE5plNIc
-  })
-}
+
+
+
 
 const styles = StyleSheet.create({
   container: {

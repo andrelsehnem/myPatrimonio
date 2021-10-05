@@ -1,10 +1,10 @@
 export default {
-    fundo: '#DBDBDB',
+    fundo: '#DBDBD0', //O OUTRO FUNDO INICIAL ERA #DBDBDB 
     primaria: '#014761',
     secundaria: '#0286B6',
 
     cinzaEscuro: '#424242',
-    cizaClaro: '#E9EAED',
+    cinzaClaro: '#E9EAED',
     amarelo: '#FFC05F',
     
     fundoBtn: '#E9F0FB',
