@@ -10,14 +10,25 @@ const logo = require('../assets/myPatrimonioNoBG.png');
 export function Login() {
   const navigation = useNavigation();
 
+  function trocaTela(){
+    navigation.navigate('MenuInicial');
+  };
+
   return (
     <View style={styles.container}>
       <View style={styles.logo}>
         <Image source={logo} />
       </View>
-      <View>
+      <View style={styles.entry}>
+      <View style={styles.inputs}>
         <TextInputLogin 
         title="Teste"/>
+      </View>
+      <View style={styles.inputs}>
+        <TextInputLogin
+        title="Senha"
+        secureTextEntry={true}
+        />
       </View>
       <View style={styles.button}>
         <ButtonLogin 
@@ -25,12 +36,9 @@ export function Login() {
           onPress={trocaTela}
         />
       </View>
+      </View>
     </View>
   );
-
-  function trocaTela(){
-    navigation.navigate('MenuInicial');
-  }
 }
 
 const styles = StyleSheet.create({
@@ -38,7 +46,6 @@ const styles = StyleSheet.create({
     flex: 1,
         width:'100%',
         alignItems:'center',
-        justifyContent:'space-around', 
         backgroundColor: colors.fundo,
   },
   logo:{
@@ -46,12 +53,14 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'space-around',
   },
-  inputs:{
+  entry:{
     flex:1,
-    padding:10,
+    alignItems: 'center',
+  },
+  inputs:{
+    padding: 10,
   },
   button:{
-    flex:1,
-    padding:10,
+    padding: 10,
   },
 })

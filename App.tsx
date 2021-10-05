@@ -11,7 +11,7 @@ import {
   Manrope_600SemiBold,
   Manrope_700Bold,
   Manrope_800ExtraBold,
-} from '@expo-google-fonts/manrope'
+} from '@expo-google-fonts/manrope';
 
 export default function App() {
 
@@ -29,11 +29,7 @@ export default function App() {
     return null;
   }
 
-
-
   return (
     <Routes />
   );
 }
-
-

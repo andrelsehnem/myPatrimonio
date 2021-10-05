@@ -6,6 +6,7 @@ import {
     TouchableOpacityProps
 } from 'react-native';
 import colors from '../styles/colors';
+import fonts from '../styles/fonts';
 
 interface ButtonProps extends TouchableOpacityProps{
     title: string;
@@ -35,7 +36,7 @@ const styles = StyleSheet.create({
     text:{
         fontSize:16,
         color: colors.cinzaClaro,
-        
+        fontFamily: fonts.bts,
     }
 })
 

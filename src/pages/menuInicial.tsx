@@ -1,5 +1,6 @@
 import React from 'react';
 import { Image, StyleSheet, Text, View } from 'react-native';
+import { ButtonLarge } from '../components/buttonLarge';
 
 import { ButtonLogin } from '../components/buttonLogin';
 import colors from '../styles/colors';
@@ -8,8 +9,8 @@ export function MenuInicial() {
   return (
     <View style={styles.container} >
         <Text>
-            Bom dia {'\n'}
-            Bom dia
+            <ButtonLarge 
+            title={'Teste'}/>
         </Text>
     </View>
   );

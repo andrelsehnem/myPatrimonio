@@ -1,16 +1,18 @@
-import React from 'react';
+import React, { Component } from 'react';
 import {
-    Text,
+    
     StyleSheet,
     TextInput,
     TextInputAndroidProps,
+    TextInputProps
 } from 'react-native'
 
 import colors from "../styles/colors";
+import fonts from '../styles/fonts';
 
 // https://reactnative.dev/docs/textinput
 
-interface txtProps extends TextInputAndroidProps{
+interface txtProps extends TextInputProps{
     title: string;
 }
 
@@ -19,10 +21,10 @@ export function TextInputLogin({title, ...rest}: txtProps){
     return(
         <TextInput 
         style= {styles.container}
+        placeholder = {title}
+        placeholderTextColor = {colors.primaria}
         {...rest}
-        >
-            {title}
-        </TextInput>
+        />
     )
 };
 
@@ -33,11 +35,13 @@ export function TextInputSimples(){
 const styles = StyleSheet.create({
     container:{
         backgroundColor: colors.fundoBtn,
-        width:245,
-        height: 39,
+        width: 300,
+        height: 42,
         borderRadius:10,
         shadowColor: '#000',
+        fontFamily: fonts.h3,
+        fontSize:16,
+        padding:10
     },
-    text:{
-    }
+    
 });

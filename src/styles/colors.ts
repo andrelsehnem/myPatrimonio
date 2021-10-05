@@ -1,5 +1,5 @@
 export default {
-    fundo: '#DBDBDB', //O OUTRO FUNDO INICIAL ERA #DBDBDB 
+    fundo: '#DBDBDB', 
     primaria: '#014761',
     secundaria: '#0286B6',
 
@@ -10,4 +10,5 @@ export default {
     fundoBtn: '#E9F0FB',
     header: '#565656',
     unCheck: '#969696',
+    fundoInput: '#FDFDFD',
 }
