@@ -6,7 +6,7 @@ import {
     TouchableOpacity,
 } from 'react-native';
 
-
+import 
 
  //https://styled-components.com/
 

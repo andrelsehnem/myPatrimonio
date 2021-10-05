@@ -39,12 +39,3 @@ const styles = StyleSheet.create({
         fontFamily: fonts.bts,
     }
 })
-
-/*
-
-    text:{
-        fontSize:16,
-        color: colors.white,
-        fontFamily: fonts.heading,
-    }
-})*/
