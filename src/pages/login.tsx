@@ -4,6 +4,7 @@ import {useNavigation} from '@react-navigation/core'
 
 import { ButtonLogin } from '../components/buttonLogin';
 import colors from '../styles/colors';
+import { TextInputLogin } from '../components/textInputs';
 const logo = require('../assets/myPatrimonioNoBG.png');
 
 export function Login() {
@@ -14,7 +15,11 @@ export function Login() {
       <View style={styles.logo}>
         <Image source={logo} />
       </View>
-      <View style={styles.inputs}>
+      <View>
+        <TextInputLogin 
+        title="Teste"/>
+      </View>
+      <View style={styles.button}>
         <ButtonLogin 
           title="Login"
           onPress={trocaTela}
@@ -43,5 +48,10 @@ const styles = StyleSheet.create({
   },
   inputs:{
     flex:1,
+    padding:10,
+  },
+  button:{
+    flex:1,
+    padding:10,
   },
 })

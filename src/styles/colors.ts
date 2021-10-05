@@ -1,5 +1,5 @@
 export default {
-    fundo: '#DBDBD0', //O OUTRO FUNDO INICIAL ERA #DBDBDB 
+    fundo: '#DBDBDB', //O OUTRO FUNDO INICIAL ERA #DBDBDB 
     primaria: '#014761',
     secundaria: '#0286B6',
 
