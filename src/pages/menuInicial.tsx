@@ -8,24 +8,33 @@ import colors from '../styles/colors';
 export function MenuInicial() {
   return (
     <View style={styles.container} >
-        <Text>
-            <ButtonLarge 
-            title={'Teste'}/>
-        </Text>
+
+      <View style={styles.bts}>
+        <ButtonLarge 
+        title="Teste"
+        />
+        <ButtonLarge 
+        title="Teste 2"
+        />
+      </View>
+      
+      
+        
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container:{
-    flex: 1,
+    
     backgroundColor: colors.fundo,
     width:'100%',
     alignItems:'center',
     justifyContent:'space-around', 
   },
-  text:{
-
+  bts:{
+    
+    
   }
 })
 

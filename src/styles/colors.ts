@@ -1,5 +1,5 @@
 export default {
-    fundo: '#DBDBDB', 
+    fundo: '#F1F1F1', 
     primaria: '#014761',
     secundaria: '#0286B6',
 
